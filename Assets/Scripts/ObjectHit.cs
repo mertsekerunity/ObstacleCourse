@@ -18,14 +18,10 @@ public class ObjectHit : MonoBehaviour
 
   private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
-            if (gameObject.CompareTag("Obstacle"))
-            {
-                Debug.Log("Collided with: " + other.gameObject.name);
-                GetComponent<MeshRenderer>().material.color = Color.red;
-                //gameObject.tag = "Obstacle";
-            }
+            Debug.Log("Collided with: " + other.gameObject.name);
+            other.gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
         }
     }
 }

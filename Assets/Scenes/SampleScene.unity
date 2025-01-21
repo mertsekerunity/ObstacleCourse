@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 46790049}
   - component: {fileID: 46790048}
   - component: {fileID: 46790047}
-  - component: {fileID: 46790051}
   - component: {fileID: 46790052}
   - component: {fileID: 46790053}
   m_Layer: 0
@@ -230,19 +229,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46790051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46790046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be3c21b078cf2664ab02b216eee919a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
 --- !u!54 &46790052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -279,9 +265,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 46790046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ed62fb404185bb4d8e69289d0768aa5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0db77949496fe5e4a82d8422977c1c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 10
 --- !u!1 &152608138
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +425,6 @@ GameObject:
   - component: {fileID: 188927558}
   - component: {fileID: 188927557}
   - component: {fileID: 188927556}
-  - component: {fileID: 188927559}
   m_Layer: 0
   m_Name: Wall (3)
   m_TagString: Obstacle
@@ -532,18 +518,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188927554}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &188927559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188927554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &278635909
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +530,6 @@ GameObject:
   - component: {fileID: 278635913}
   - component: {fileID: 278635912}
   - component: {fileID: 278635911}
-  - component: {fileID: 278635914}
   m_Layer: 0
   m_Name: Obstacle (6)
   m_TagString: Obstacle
@@ -650,18 +623,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278635909}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &278635914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278635909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &280348728
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +635,6 @@ GameObject:
   - component: {fileID: 280348732}
   - component: {fileID: 280348731}
   - component: {fileID: 280348730}
-  - component: {fileID: 280348733}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -768,18 +728,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280348728}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &280348733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280348728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &306459186
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,7 +742,6 @@ GameObject:
   - component: {fileID: 306459188}
   - component: {fileID: 306459191}
   - component: {fileID: 306459193}
-  - component: {fileID: 306459192}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Obstacle
@@ -901,18 +848,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &306459192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306459186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &306459193
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1332,7 +1267,6 @@ GameObject:
   - component: {fileID: 489052326}
   - component: {fileID: 489052329}
   - component: {fileID: 489052331}
-  - component: {fileID: 489052330}
   m_Layer: 0
   m_Name: Sphere (6)
   m_TagString: Obstacle
@@ -1439,18 +1373,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &489052330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489052324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &489052331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1492,7 +1414,6 @@ GameObject:
   - component: {fileID: 638301683}
   - component: {fileID: 638301686}
   - component: {fileID: 638301688}
-  - component: {fileID: 638301687}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Obstacle
@@ -1599,18 +1520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &638301687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638301681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &638301688
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1734,7 +1643,6 @@ GameObject:
   - component: {fileID: 872739299}
   - component: {fileID: 872739298}
   - component: {fileID: 872739297}
-  - component: {fileID: 872739300}
   m_Layer: 0
   m_Name: Obstacle (3)
   m_TagString: Obstacle
@@ -1828,18 +1736,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872739295}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &872739300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872739295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &930406487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,7 +1783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &935454584
 Transform:
   m_ObjectHideFlags: 0
@@ -1927,7 +1823,6 @@ GameObject:
   - component: {fileID: 1032367713}
   - component: {fileID: 1032367716}
   - component: {fileID: 1032367718}
-  - component: {fileID: 1032367717}
   m_Layer: 0
   m_Name: Sphere (3)
   m_TagString: Obstacle
@@ -2034,18 +1929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1032367717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032367711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1032367718
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2085,7 +1968,6 @@ GameObject:
   - component: {fileID: 1081920244}
   - component: {fileID: 1081920243}
   - component: {fileID: 1081920242}
-  - component: {fileID: 1081920245}
   m_Layer: 0
   m_Name: Obstacle (5)
   m_TagString: Obstacle
@@ -2179,18 +2061,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081920240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1081920245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081920240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1214519084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2203,7 +2073,6 @@ GameObject:
   - component: {fileID: 1214519088}
   - component: {fileID: 1214519087}
   - component: {fileID: 1214519086}
-  - component: {fileID: 1214519089}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -2297,18 +2166,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214519084}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1214519089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214519084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1277192561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2429,7 +2286,6 @@ GameObject:
   - component: {fileID: 1314954619}
   - component: {fileID: 1314954622}
   - component: {fileID: 1314954624}
-  - component: {fileID: 1314954623}
   m_Layer: 0
   m_Name: Sphere (4)
   m_TagString: Obstacle
@@ -2536,18 +2392,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1314954623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314954617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1314954624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2587,7 +2431,6 @@ GameObject:
   - component: {fileID: 1352786528}
   - component: {fileID: 1352786527}
   - component: {fileID: 1352786526}
-  - component: {fileID: 1352786529}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: Obstacle
@@ -2681,18 +2524,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352786524}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1352786529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352786524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1369686237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,7 +2538,6 @@ GameObject:
   - component: {fileID: 1369686239}
   - component: {fileID: 1369686242}
   - component: {fileID: 1369686244}
-  - component: {fileID: 1369686243}
   m_Layer: 0
   m_Name: Sphere (9)
   m_TagString: Obstacle
@@ -2814,18 +2644,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1369686243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369686237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1369686244
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2867,7 +2685,6 @@ GameObject:
   - component: {fileID: 1380767479}
   - component: {fileID: 1380767482}
   - component: {fileID: 1380767484}
-  - component: {fileID: 1380767483}
   m_Layer: 0
   m_Name: Sphere (5)
   m_TagString: Obstacle
@@ -2974,18 +2791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1380767483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380767477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1380767484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3025,7 +2830,6 @@ GameObject:
   - component: {fileID: 1391437838}
   - component: {fileID: 1391437837}
   - component: {fileID: 1391437836}
-  - component: {fileID: 1391437839}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: Obstacle
@@ -3119,18 +2923,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391437834}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1391437839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391437834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1549134299
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,7 +2937,6 @@ GameObject:
   - component: {fileID: 1549134301}
   - component: {fileID: 1549134304}
   - component: {fileID: 1549134306}
-  - component: {fileID: 1549134305}
   m_Layer: 0
   m_Name: Sphere (7)
   m_TagString: Obstacle
@@ -3252,18 +3043,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1549134305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549134299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1549134306
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3303,7 +3082,6 @@ GameObject:
   - component: {fileID: 1601418182}
   - component: {fileID: 1601418181}
   - component: {fileID: 1601418180}
-  - component: {fileID: 1601418183}
   m_Layer: 0
   m_Name: Obstacle (1)
   m_TagString: Obstacle
@@ -3397,18 +3175,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601418178}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1601418183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601418178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1601695499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,7 +3222,6 @@ GameObject:
   - component: {fileID: 1816821534}
   - component: {fileID: 1816821537}
   - component: {fileID: 1816821539}
-  - component: {fileID: 1816821538}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Obstacle
@@ -3563,18 +3328,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1816821538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816821532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1816821539
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4021,7 +3774,6 @@ GameObject:
   - component: {fileID: 1983725990}
   - component: {fileID: 1983725993}
   - component: {fileID: 1983725995}
-  - component: {fileID: 1983725994}
   m_Layer: 0
   m_Name: Sphere (8)
   m_TagString: Obstacle
@@ -4128,18 +3880,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToWait: 3
---- !u!114 &1983725994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983725988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1983725995
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4179,7 +3919,6 @@ GameObject:
   - component: {fileID: 2038357339}
   - component: {fileID: 2038357338}
   - component: {fileID: 2038357337}
-  - component: {fileID: 2038357340}
   m_Layer: 0
   m_Name: Obstacle (2)
   m_TagString: Obstacle
@@ -4273,18 +4012,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038357335}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2038357340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038357335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2039720543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,7 +4130,6 @@ GameObject:
   - component: {fileID: 2042484659}
   - component: {fileID: 2042484658}
   - component: {fileID: 2042484657}
-  - component: {fileID: 2042484660}
   m_Layer: 0
   m_Name: Obstacle (4)
   m_TagString: Obstacle
@@ -4497,18 +4223,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2042484655}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2042484660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2042484655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cff94269a9490b14eae458e28376fb91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
