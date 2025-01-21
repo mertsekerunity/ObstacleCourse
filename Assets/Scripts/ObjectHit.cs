@@ -16,9 +16,27 @@ public class ObjectHit : MonoBehaviour
         
     }
 
+/*   private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            if (gameObject.CompareTag("Obstacle"))
+            {
+                Debug.Log("Collided with: " + other.gameObject.name);
+                GetComponent<MeshRenderer>().material.color = Color.red;
+                //gameObject.tag = "Obstacle";
+            }
+        }
+    }
+*/
+
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collided with: " + other.gameObject.name);
-        GetComponent<MeshRenderer>().material.color = Color.red;
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Collided with: " + other.gameObject.name);
+            GetComponent<MeshRenderer>().material.color = Color.red;
+            gameObject.tag = "Obstacle";
+        }
     }
 }
