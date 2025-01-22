@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Collided with: " + other.gameObject.name);
             Debug.Log("You have bumped into a thing this many times: " + hits);
             other.gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+            //playerin cani azalsin, renk degistirme kalksin
         }
     }
 }
